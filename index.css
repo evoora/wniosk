@@ -74,7 +74,7 @@ body, html {
 .image-section {
     position: relative;
     height: 48vw;
-    background: url('/img/headerimg.jpeg') center/cover no-repeat;
+    background: url('headerimg.jpeg') center/cover no-repeat;
     margin-top: 0;
     width: 100%; /* Ensure the image section takes full width */
     box-sizing: border-box; /* Prevent overflow */
@@ -196,7 +196,7 @@ body, html {
   .map-placeholder {
     width: 50%;
     height: 12vw;
-    background: url('/img/mapka3.png') no-repeat center center;
+    background: url('mapka3.png') no-repeat center center;
     background-size: cover;
     margin-top: 50px;
   }
