@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/img/logoslim.png" alt="UniaEuropejska">
+        </div>
+        <div class="nav-links">
+            <a href="#">O programie</a>
+            <a href="#">Aktualności</a>
+           
+        </div>
+        <div class="contact">
+            <a href="#">Kontakt</a>
+            <a href="#">Facebook</a>
+        </div>
+    </nav>
+
+    <!-- Image Section -->
+    <div class="image-section">
+        <div class="text-overlay">
+            <h1>RZĄDOWY PROGRAM</h1>
+            <h2>CZYSTE POWIETRZE</h2>
+            <div class="description-container">
+            <p class="description">Termomodernizacja budynku? Wymiana starego źródła ciepła? <br>
+                Gwarantujemy pełne wsparcie przy uzyskaniu dotacji z Programu Czyste Powietrze. <br>
+                <button class="arrow-button" onclick="scrollToContact()"><i class="fas fa-chevron-down"></i></button>
+            </p>
+            </div>
+        </div>
+    </div>
+    <!-- Process Explanation -->
+    <section class="process-section" id="process-section">
+        <h2>Jak przebiega proces współpracy?</h2>
+        <div class="process-cards">
+          <div class="process-card">
+            <i class="fas fa-phone"></i>
+            <h3>Kontakt z nami</h3>
+            <p>Przesłanie niezbędnych informacji.</p>
+          </div>
+          <div class="process-card">
+            <i class="fas fa-search"></i>
+            <h3>Weryfikacja możliwości</h3>
+            <p>Przeprowadzenie darmowej weryfikacji.</p>
+          </div>
+          <div class="process-card">
+            <i class="fas fa-signature"></i>
+            <h3>Podpisanie umowy</h3>
+            <p>Podpisanie umowy z klientem.</p>
+          </div>
+          <div class="process-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Przesłanie dokumentów</h3>
+            <p>Przesłanie podpisanych dokumentów i opłacenie usługi.</p>
+          </div>
+          <div class="process-card">
+            <i class="fas fa-check"></i>
+            <h3>Sporządzenie wniosku</h3>
+            <p>Sporządzenie wniosku o dotację.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="faq">
+        <div id="h2container"><h2>Najczęściej zadawane pytania</h2></div>
+    
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                <span class="faq-icon">+</span> Jakie projekty kwalifikują się do dofinansowania w programie Czyste Powietrze?
+            </button>
+            <div class="faq-answer">
+                <p>Dofinansowanie można uzyskać na projekty związane z wymianą starych źródeł ciepła na nowoczesne, ekologiczne rozwiązania, jak pompy ciepła, a także na termomodernizację budynków.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                <span class="faq-icon">+</span> Jak mogę ubiegać się o dofinansowanie na instalację pompy ciepła?
+            </button>
+            <div class="faq-answer">
+                <p>Możesz złożyć wniosek za pośrednictwem odpowiednich stron rządowych lub skorzystać z naszej pomocy, aby poprowadzić Cię przez cały proces aplikacyjny.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                <span class="faq-icon">+</span> Ile czasu zajmuje uzyskanie dofinansowania?
+            </button>
+            <div class="faq-answer">
+                <p>Proces przyznania dofinansowania zwykle trwa od kilku tygodni do kilku miesięcy, w zależności od poprawności złożonego wniosku i aktualnej liczby zgłoszeń.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                <span class="faq-icon">+</span> Czy mogę otrzymać wsparcie przy wypełnianiu wniosku?
+            </button>
+            <div class="faq-answer">
+                <p>Tak, oferujemy kompleksową pomoc przy przygotowaniu i wypełnianiu wniosków, aby zwiększyć szanse na otrzymanie dofinansowania.</p>
+            </div>
+        </div>
+    
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                <span class="faq-icon">+</span> Jakie dokumenty są wymagane do złożenia wniosku?
+            </button>
+            <div class="faq-answer">
+                <p>Wymagane są dokumenty potwierdzające status własności nieruchomości, kosztorysy inwestycji, oraz inne zaświadczenia dotyczące energetycznych parametrów budynku.</p>
+            </div>
+        </div>
+    </div>
+    
+      <div class="testimonial-section">
+        <h2>Kochani przez kontrahentów.</h2>
+        <p>Co o nas mówią ?</p>
+        <div class="testimonial-container">
+            <div class="testimonial-row" id="row-1">
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=1" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Piotr</p>
+                        <p class="handle">@piotr_nowaenergia</p>
+                        <p class="comment">Niesamowite wsparcie! Dzięki pomocy, mój dom jest teraz bardziej ekologiczny, a koszty ogrzewania spadły o 40%.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=5" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Anna</p>
+                        <p class="handle">@anna_domcieply</p>
+                        <p class="comment">Profesjonalizm w każdym calu! Proces był prosty, a wsparcie finansowe pozwoliło nam wymienić starą instalację grzewczą.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=3" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Jan</p>
+                        <p class="handle">@jan_czystepowietrze</p>
+                        <p class="comment">Z pomocą tej firmy mogłem skorzystać z dofinansowania i w pełni ocieplić budynek. Polecam każdemu!</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=6" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Katarzyna</p>
+                        <p class="handle">@kasia_zielonydom</p>
+                        <p class="comment">Zdecydowanie warto! Teraz mój dom jest bardziej komfortowy, a ja czuję, że dbam o środowisko.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=4" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Marek</p>
+                        <p class="handle">@marek_eco</p>
+                        <p class="comment">Świetna współpraca i fachowa pomoc na każdym etapie. Polecam każdemu, kto chce skorzystać z Programu Czyste Powietrze.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=1" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Piotr</p>
+                        <p class="handle">@piotr_nowaenergia</p>
+                        <p class="comment">Niesamowite wsparcie! Dzięki pomocy, mój dom jest teraz bardziej ekologiczny, a koszty ogrzewania spadły o 40%.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=5" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Anna</p>
+                        <p class="handle">@anna_domcieply</p>
+                        <p class="comment">Profesjonalizm w każdym calu! Proces był prosty, a wsparcie finansowe pozwoliło nam wymienić starą instalację grzewczą.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=3" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Jan</p>
+                        <p class="handle">@jan_czystepowietrze</p>
+                        <p class="comment">Z pomocą tej firmy mogłem skorzystać z dofinansowania i w pełni ocieplić budynek. Polecam każdemu!</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=6" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Katarzyna</p>
+                        <p class="handle">@kasia_zielonydom</p>
+                        <p class="comment">Zdecydowanie warto! Teraz mój dom jest bardziej komfortowy, a ja czuję, że dbam o środowisko.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=4" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Marek</p>
+                        <p class="handle">@marek_eco</p>
+                        <p class="comment">Świetna współpraca i fachowa pomoc na każdym etapie. Polecam każdemu, kto chce skorzystać z Programu Czyste Powietrze.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+            </div>
+    
+            <div class="testimonial-row faster" id="row-2">
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=8" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Dziad Ekonom</p>
+                        <p class="handle">@alicja_eko</p>
+                        <p class="comment">Realizacja była szybka i sprawna. Teraz nasz dom jest energooszczędny, a rachunki znacznie niższe.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=7" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Tomasz</p>
+                        <p class="handle">@tomasz_odnowa</p>
+                        <p class="comment">Proces ubiegania się o dofinansowanie był przejrzysty, a wsparcie zespołu bezcenne!</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=10" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Zofia</p>
+                        <p class="handle">@zofia_eco2023</p>
+                        <p class="comment">Dzięki tej firmie udało nam się zrealizować plan termomodernizacji bez komplikacji. Polecam!</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=2" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Rafał</p>
+                        <p class="handle">@rafal_zmieniamdom</p>
+                        <p class="comment">Ogromna ulga finansowa i świetne efekty! Nasz dom jest teraz ciepły i oszczędny.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=15" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Magda</p>
+                        <p class="handle">@magda_ekodom</p>
+                        <p class="comment">Jestem bardzo zadowolona z rezultatów. Firma zadbała o wszystko, od doradztwa po finalizację projektu.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=8" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Dziad Ekonom</p>
+                        <p class="handle">@alicja_eko</p>
+                        <p class="comment">Realizacja była szybka i sprawna. Teraz nasz dom jest energooszczędny, a rachunki znacznie niższe.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=7" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Tomasz</p>
+                        <p class="handle">@tomasz_odnowa</p>
+                        <p class="comment">Proces ubiegania się o dofinansowanie był przejrzysty, a wsparcie zespołu bezcenne!</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=10" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Zofia</p>
+                        <p class="handle">@zofia_eco2023</p>
+                        <p class="comment">Dzięki tej firmie udało nam się zrealizować plan termomodernizacji bez komplikacji. Polecam!</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=2" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Rafał</p>
+                        <p class="handle">@rafal_zmieniamdom</p>
+                        <p class="comment">Ogromna ulga finansowa i świetne efekty! Nasz dom jest teraz ciepły i oszczędny.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=15" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Magda</p>
+                        <p class="handle">@magda_ekodom</p>
+                        <p class="comment">Jestem bardzo zadowolona z rezultatów. Firma zadbała o wszystko, od doradztwa po finalizację projektu.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+            </div>
+    
+            <div class="testimonial-row" id="row-3">
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=11" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Paweł</p>
+                        <p class="handle">@pawel_ekodom</p>
+                        <p class="comment">Super wsparcie od początku do końca. Dofinansowanie pomogło mi ocieplić cały dom.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=12" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Beata</p>
+                        <p class="handle">@beata_zielonaenergia</p>
+                        <p class="comment">Firma pomogła nam z całym procesem aplikacji. Polecam za rzetelność i szybkie działanie.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=13" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Krzysztof</p>
+                        <p class="handle">@krzysztof_eco</p>
+                        <p class="comment">Dzięki pomocy tej firmy mogłem zmodernizować swój dom i cieszyć się niższymi rachunkami.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=14" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Ela</p>
+                        <p class="handle">@ela_czystedom</p>
+                        <p class="comment">Proces był prostszy niż myślałam. Świetny kontakt i fachowa obsługa!</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=9" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Jacek</p>
+                        <p class="handle">@jacek_termomodernizacja</p>
+                        <p class="comment">Bardzo polecam! Zespół zadbał o wszystkie detale i pomógł w realizacji projektu.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=11" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Paweł</p>
+                        <p class="handle">@pawel_ekodom</p>
+                        <p class="comment">Super wsparcie od początku do końca. Dofinansowanie pomogło mi ocieplić cały dom.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=12" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Beata</p>
+                        <p class="handle">@beata_zielonaenergia</p>
+                        <p class="comment">Firma pomogła nam z całym procesem aplikacji. Polecam za rzetelność i szybkie działanie.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=13" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Krzysztof</p>
+                        <p class="handle">@krzysztof_eco</p>
+                        <p class="comment">Dzięki pomocy tej firmy mogłem zmodernizować swój dom i cieszyć się niższymi rachunkami.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=14" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Ela</p>
+                        <p class="handle">@ela_czystedom</p>
+                        <p class="comment">Proces był prostszy niż myślałam. Świetny kontakt i fachowa obsługa!</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://i.pravatar.cc/50?img=9" alt="Avatar" class="avatar">
+                    <div class="testimonial-content">
+                        <p class="username">Jacek</p>
+                        <p class="handle">@jacek_termomodernizacja</p>
+                        <p class="comment">Bardzo polecam! Zespół zadbał o wszystkie detale i pomógł w realizacji projektu.</p>
+                    </div>
+                    <i class="fab fa-twitter twitter-icon"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact-section">
+        <div class="contact-info">
+          <div id="contact-icons">
+            <h2>Skontaktuj się z nami</h2>
+            <p>Poprowadzimy Cię przez cały proces – od rozpoznania możliwości uzyskania dotacji, po finalną akceptację przez urząd.</p>
+          </div>
+          <div class="contact-details">
+            <p><a href="tel:+48001234567">+48 572 413 258</a></p>
+            <p><a href="mailto:wsparcie@czystepowietrze.pl">wsparcie@czystepowietrze.pl</a></p>
+          </div>
+          <h3>Jesteśmy tutaj</h3>
+          <div class="map-placeholder"></div> <!-- Replace with actual map image or embed -->
+        </div>
+      
+        <div class="contact-form">
+          <form>
+            <label for="name">Pełne Imię</label>
+            <input type="text" id="name" name="name" placeholder="Jan Kowalski" required>
+      
+            <label for="email">Adres Email</label>
+            <input type="email" id="email" name="email" placeholder="jan.kowalski@przykład.com" required>
+      
+            <label for="company">Firma</label>
+            <input type="text" id="company" name="company" placeholder="Firma XYZ">
+      
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" placeholder="Napisz swoją wiadomość tutaj" required></textarea>
+      
+            <button type="submit">Wyślij</button>
+          </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Left section: Logo and copyright -->
+            <div class="footer-left">
+                <div class="logo">
+                    <img src="img/logoslimmer.png" alt="DevStudio Logo"> <!-- Replace with actual path to your logo -->
+                    <p class="copyright">Właścicielem strony jest czystepowietrze. Wszystkie prawa zastrzeżone.</p>
+                </div>
+                
+            </div>
+            
+            <!-- Right section: Footer navigation -->
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h4>Podstrony</h4>
+                    <ul>
+                        <li><a href="#all-products">O programie</a></li>
+                        <li><a href="#studio">Aktualności</a></li>
+                        <li><a href="#clients">Kontakt</a></li>
+                       
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Społeczność</h4>
+                    <ul>
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Whatsapp</a></li>
+                        <li><a href="https://instagram.com" target="_blank">OLX</a></li>
+
+            
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Polityka Firmy</h4>
+                    <ul>
+                        <li><a href="#privacy-policy">Polityka Prywatności</a></li>
+                        <li><a href="#terms-of-service">RODO</a></li>
+                        <li><a href="#cookie-policy">Ciasteczka</a></li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        function scrollToContact() {
+            document.querySelector('#process-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+        
+    </script>
+    <script>
+        // Handle the toggling of FAQ answers and icon changes
+       const faqItems = document.querySelectorAll('.faq-item');
+       
+       faqItems.forEach(item => {
+           const question = item.querySelector('.faq-question');
+           question.addEventListener('click', () => {
+               item.classList.toggle('open');
+           });
+       });
+       </script>
+    
+</body>
+</html>

@@ -1,0 +1,558 @@
+@font-face {
+    font-family: '__GeistSans'; /* Use the font name you prefer */
+    src: url('fonts/Geist-v1.4.01/ttf/Geist-Bold.ttf') format('woff2'), /* Adjust the filename based on what you have */
+         url('fonts/Geist-v1.4.01/otf/Geist-Bold.otf') format('woff'),
+         url('fonts/Geist-v1.4.01/webfonts/Geist-Bold.woff2') format('truetype'); /* Include other formats if available */
+    font-weight: normal; /* Adjust based on the font style */
+    font-style: normal; /* Adjust based on the font style */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 7%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: absolute; /* Changed to relative to stay in document flow */
+    z-index: 10;
+    box-sizing: border-box; /* Ensure padding doesn't push navbar width beyond 100% */
+   
+}
+
+.navbar .logo {
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    
+   
+}
+.navbar .logo:hover {
+    transform: scale(1.05);  /* Grow the element */
+    transition: transform 0.5s ease;  /* Smooth transition */
+}
+
+.navbar .logo img {
+    width: 180px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.navbar .nav-links a {
+    color: rgb(66, 66, 66); /* Greyish text */
+    font-family: '__GeistSans', sans-serif; /* Use Geist Sans */
+    text-decoration: none;
+    margin: 0 10px; /* Optional margin for spacing */
+    font-size: 14px;
+}
+.navbar .nav-links a:hover {
+    color: rgba(0, 110, 255, 0.527);
+    transition: 0.15s ease-in;
+}
+
+.navbar .contact a {
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+.navbar .contact a:hover {
+    color: rgb(98, 161, 255);
+    transition: 0.3s linear;
+}
+
+/* Image section styling */
+.image-section {
+    position: relative;
+    height: 48vw;
+    background: url('/img/headerimg.jpeg') center/cover no-repeat;
+    margin-top: 0;
+    width: 100%; /* Ensure the image section takes full width */
+    box-sizing: border-box; /* Prevent overflow */
+}
+
+.text-overlay {
+    position: relative;
+    top: 38%;
+    color: white;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.027);
+    border-radius: 0;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-overlay h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.text-overlay h2 {
+    font-size: 30px;
+    margin: 0;
+}
+.description-container {
+ 
+}
+.text-overlay .description {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+.arrow-button {
+    background: none;
+    border: none;
+    font-size: 28px; /* Adjust the size as needed */
+    cursor: pointer;
+  }
+  
+  .arrow-button i {
+    margin-top: 15px;
+    color: rgb(255, 255, 255); /* Change the color as needed */
+  }
+  .arrow-button i:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+  }
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar .nav-links a {
+        margin: 10px 0;
+        font-size: 14px; /* Slightly smaller font size on mobile */
+    }
+
+    .image-section {
+        height: 50vw; /* Adjust image height for better responsiveness */
+    }
+
+    .text-overlay h1 {
+        font-size: 30px; /* Smaller font size on mobile */
+    }
+
+    .text-overlay h2 {
+        font-size: 22px; /* Smaller font size on mobile */
+    }
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 25px 15%;
+    border-radius: 8px;
+    margin-top: 50px;
+   
+  }
+  
+  .contact-info {
+    width: 45%; /* Adjust width as needed */
+    padding-right: 20px;
+  }
+  .contact-info h2{
+    font-size: 36px;
+    
+  }
+  .contact-info h2,
+  .contact-info h3 {
+    color: #333;
+    font-family: 'Inter';
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+
+ 
+  .contact-details {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .contact-details a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+  }
+  .map-placeholder {
+    width: 50%;
+    height: 12vw;
+    background: url('/img/mapka3.png') no-repeat center center;
+    background-size: cover;
+    margin-top: 50px;
+  }
+  
+  .contact-form {
+    width: 45%; /* Adjust width as needed */
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .contact-form button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Process Section */
+.process-section {
+    padding: 100px 0;
+    padding-bottom: 150px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  /* Section Title */
+  .process-section h2 {
+    font-family: 'Inter', sans-serif; /* Use Geist Sans */
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  /* Cards Container */
+  .process-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+    margin-bottom: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Card */
+  .process-card {
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .process-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Icon Style */
+  .process-card i {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 15px;
+  }
+  
+  /* Card Title */
+  .process-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Card Description */
+  .process-card p {
+    font-size: 0.9em;
+    color: #555;
+  }
+
+
+
+
+  
+.testimonial-section {
+    background-color: #f9f9f9;
+    color: #000000;
+    text-align: center;
+    padding: 20px 15%;
+    align-items: center;
+    max-height: 80vh;
+    overflow: hidden;
+}
+
+.testimonial-container {
+    display: flex;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
+    overflow: hidden;
+    max-width: 100%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.testimonial-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: scrollUp 20s linear infinite;
+    margin: auto;
+}
+
+.testimonial-row.faster {
+    animation-duration: 35s; /* Faster speed for the middle row */
+}
+
+.testimonial-card {
+    display: flex;
+    align-items: flex-start; /* Align items to start to move avatar closer to the top */
+    padding: 8px 12px; /* Reduced padding */
+    margin-bottom: 35px;
+    margin-right: 30px;
+    border-radius: 8px;
+    min-width: 200px;
+    background-color: rgba(255, 255, 255, 0.774);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    position: relative;
+    
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-self: flex-start; /* Align avatar to the top of the card */
+    margin-right: 10px; /* Space between avatar and text */
+    padding-top: 15px;
+}
+
+.testimonial-content {
+    text-align: left;
+    padding-top: 15px;
+    
+}
+
+.username {
+    
+    font-weight: bold;
+    color: #000000;
+    margin: 0; /* Remove extra margin */
+}
+
+.handle {
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 2px; /* Minimal margin for spacing */
+}
+
+.comment {
+    color: #111111;
+    font-size: 1rem;
+    margin-top: 4px; /* Small margin for spacing */
+    text-align: left;
+}
+
+.twitter-icon {
+    color: #1DA1F2;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+/* Animation for scrolling effect */
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+
+
+.faq {
+    width: 100%;
+    max-width: 900px; /* Slightly larger container */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(255, 255, 255, 0.774);
+}
+
+.faq h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #050505;
+    font-weight: 600;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    width: 85%; /* Smaller than full width */
+    padding: 15px;
+    font-size: 18px;
+    text-align: left;
+    background-color: transparent;
+    color: #292929;
+    border: none;
+    cursor: pointer;
+    border-bottom: 0.1px solid #d1d1d144; /* Lighter bottom border */
+    display: flex;
+    transition: color 0.3s;
+
+    
+  
+}
+
+.faq-question:hover {
+    color: #333; /* Darker text on hover */
+}
+
+.faq-icon {
+    font-size: 30px;
+    color: #007bff; /* Blue icon for + and - */
+    transition: transform 0.3s;
+    margin-right: 15px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    color: #7a7a7a;
+    font-size: 16px;
+    
+}
+
+.faq-answer p {
+    margin: 0;
+    padding: 0;
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(45deg); /* Rotate icon when open */
+    color: #007bff; /* Keep blue when open */
+}
+
+
+
+
+
+
+
+.footer {
+    background-color: #0e0e0e;
+    padding: 20px 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 100px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-left {
+    max-width: 200px;
+}
+.footer-left .logo p {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    color: gray;
+
+}
+
+.logo img {
+    margin-top: 20px;
+    width: 100%; /* Adjust based on your needs */
+ 
+    
+}
+
+.footer-right {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: rgb(184, 184, 184);
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #5a5a5a;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.footer-column a:hover {
+    color: #007BFF;
+}
