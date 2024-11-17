@@ -175,15 +175,16 @@ body, html {
 /* Adjust for mobile devices (tablets) */
 @media (max-width: 768px) {
     .image-section {
-        height: 50vh; /* Set height to 50% of viewport height for tablets */
+        height: 61vh; /* Set height to 50% of viewport height for tablets */
         background-size: cover; /* Ensure the image covers the area */
-       background-position: 25% 75%;
+       background-position: 25% 85%;
     
     }
 
     .text-overlay {
         width: 80%; /* Increase width for better visibility on smaller screens */
         top: 10%;
+        overflow: hidden;
         
     }
 }
